@@ -1,21 +1,25 @@
-import React from 'react'
-import { BrowserRouter,  Route, Routes as Router, } from 'react-router-dom'
-import TestComponent from '../test';
-import Tabs from '../tabs';
+import React from "react";
+import { BrowserRouter, Route, Routes as Router } from "react-router-dom";
+import TestComponent from "../test";
+import Tabs from "../tabs";
+import Products from "../products";
 
 const Routes = () => {
   return (
     <BrowserRouter>
-        <div className="container__wrap">
+      <div className="container__wrap">
         <Router>
-            <Route path="/test" Component={TestComponent} />
+          <Route path="/test" Component={TestComponent} />
         </Router>
         <Router>
-            <Route path="/tabs" Component={Tabs} />
+          <Route path="/tabs" Component={Tabs} />
         </Router>
-        </div>
+        <Router>
+          <Route path="/products" Component={Products} />
+        </Router>
+      </div>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default Routes
+export default Routes;

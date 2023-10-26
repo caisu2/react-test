@@ -1,6 +1,5 @@
-import React from 'react';
-import './App.css';
-import Routes from './pages/routes/routes';
+import "./App.css";
+import Routes from "./pages/routes/routes";
 
 function App() {
   return (
