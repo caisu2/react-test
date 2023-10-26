@@ -1,4 +1,5 @@
 import { useQuery } from "react-query";
+import ProductForm from "./forms";
 
 interface DataProps {
   id: number;
@@ -21,13 +22,13 @@ const fetchUserData = async () => {
 const Products = () => {
   const { data, error, isLoading } = useQuery([], () => fetchUserData());
 
-  console.log(data, isLoading, error);
   if (isLoading) {
     return <div>Loading...</div>;
   }
 
   return (
     <>
+      <ProductForm />
       {!isLoading && data.length > 0 ? (
         <>
           <div className="bg-white py-10 sm:py-10">
