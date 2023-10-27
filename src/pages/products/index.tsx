@@ -40,7 +40,7 @@ const Products = () => {
                     className="flex max-w-xl flex-col items-start justify-between"
                   >
                     <div className="group relative text-left">
-                      <div className="flex space-x-4">
+                      <div className="flex space-x-10">
                         <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                           <a href="#">
                             <span className="absolute inset-0" />
