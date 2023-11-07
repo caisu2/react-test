@@ -1,7 +1,2 @@
-import React from "react";
-
-const index = () => {
-  return <div>index</div>;
-};
-
-export default index;
+export { default as useGetProductQuery } from "./useGetProductQuery";
+export { default as useGetInformationQuery } from "./useGetInformationQuery";

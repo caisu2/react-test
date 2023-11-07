@@ -14,7 +14,7 @@ export async function fetchQuery({ queryKey }: any) {
 
   const response = await globalApi().get(`${endpoint}${params}`);
 
-  return response.data.data;
+  return response.data;
 }
 
 const useGetAllQuery = (props: Props) => {
